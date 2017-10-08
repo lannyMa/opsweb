@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.staticfile.org/jquery/1.12.2/jquery.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<form action="#" method="put">
+    <ul>
+        <li><input type="test" name="username"></li>
+        <li><input type="checkbox" name="fav" value="1">os</li>
+        <li><input type="checkbox" name="fav" value="2">php</li>
+        <li><input type="checkbox" name="fav" value="3">python</li>
+        <li><input type="submit" value="login"></li>
+    </ul>
+</form>
+</body>
+</html>
+<script>
+    $.ajax({
+        url: "#",
+
+        data: {'username': 'zrd', 'fav': ['1', '2', '3']},
+        type: 'put',
+        sucess: function () {
+
+        }
+    });
+</script>
